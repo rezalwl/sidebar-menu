@@ -88,11 +88,11 @@ body{
 }
 
 
-.btn{
+.btn {
     position: absolute;
     right: -43px;
     top: 20px;
-    background: #311B92;
+    background: rgb(49, 27, 146 , 0);
     width: 40px;
     height: 40px;
     display: flex;
@@ -100,4 +100,13 @@ body{
     justify-content: center;
     cursor: pointer;
     color: #fff;
+    animation-name: example ;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+  @keyframes example {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+  }
