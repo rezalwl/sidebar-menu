@@ -1,0 +1,103 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+     url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    height: 100vh;
+}
+
+
+.container{
+    width: 100%;
+    margin-inline: auto;
+    line-height: 27px;
+}
+.header{
+    background-color: #311b92;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.header p{
+    max-width: 900px;
+    text-align: center;
+    margin-inline: auto;
+
+}
+.content{
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 20px;
+}
+.sidebar{
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background: #311B92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    transition: left .4s ease-in-out;
+    border-right: solid #000 3px;
+}
+.active{
+    left: 0;
+}
+.sidebar img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sidebar ul{
+    list-style: none;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.sidebar ul li{
+    text-align: center;
+    border-bottom: 1px solid #616161;
+    border-top: 1px solid #616161;
+    transition: .3s ease-in-out;
+}
+
+.sidebar ul li:hover{
+    background: #3b21ac;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+
+.btn{
+    position: absolute;
+    right: -43px;
+    top: 20px;
+    background: #311B92;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+}
